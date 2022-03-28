@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/luatthaigia-react/static/css/main.073c9b0a.css",
+    "main.js": "/luatthaigia-react/static/js/main.f39fa2b8.js",
+    "static/js/787.5f9c90f1.chunk.js": "/luatthaigia-react/static/js/787.5f9c90f1.chunk.js",
+    "static/media/logo.svg": "/luatthaigia-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/luatthaigia-react/index.html",
+    "main.073c9b0a.css.map": "/luatthaigia-react/static/css/main.073c9b0a.css.map",
+    "main.f39fa2b8.js.map": "/luatthaigia-react/static/js/main.f39fa2b8.js.map",
+    "787.5f9c90f1.chunk.js.map": "/luatthaigia-react/static/js/787.5f9c90f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.f39fa2b8.js"
+  ]
+}

@@ -1,13 +1,13 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document)
-function start(){
+function Start(){
     handleForm()
     handleSlide()
     handelBgService()
     loaddingPage()
 }
 
-start()
+export default Start
 
 function handleForm(){
     let submitForm = $('#form__submit')
@@ -37,33 +37,33 @@ function handleForm(){
         // validateForm
         let errorForm = {}
 
-        if (name.trim() == '')
+        if (name.trim() === '')
         {
             errorForm['name'] = 'Họ và tên không được để trống'
             $('input[name="name"]').parentElement.querySelector('.form__required').innerText = errorForm['name']
         }
-        if (tel.trim() == '')
+        if (tel.trim() === '')
         {
             errorForm['tel'] = 'Số điện thoại không được để trống'
             $('input[name="number"]').parentElement.querySelector('.form__required').innerText = errorForm['tel']
         }
-        if (email.trim() == '')
+        if (email.trim() === '')
         {
             errorForm['email'] = 'Email không được để trống'
             $('input[name="email"]').parentElement.querySelector('.form__required').innerText = errorForm['email']
         }
-        if (tittle.trim() == '')
+        if (tittle.trim() === '')
         {
             errorForm['tittle'] = 'Tiêu đề không được để trống'
             $('input[name="tittle"]').parentElement.querySelector('.form__required').innerText = errorForm['tittle']
         }
-        if (description.trim() == '')
+        if (description.trim() === '')
         {
             errorForm['description'] = 'Mô tả không được để trống'
             $('input[name="description"]').parentElement.querySelector('.form__required').innerText = errorForm['description']
         }
 
-        if(Object.keys(errorForm) == 0)
+        if(Object.keys(errorForm) === 0)
         {
             name = ''
             tel = ''

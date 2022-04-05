@@ -1,7 +1,6 @@
 import './assets/css';
 import Header from './components/Header';
 import Slide from './components/Slide';
-import Banner from './components/Banner';
 import Advert from './components/Advert';
 import Service from './components/Service';
 import WorkingProcess from './components/WorkingProcess';

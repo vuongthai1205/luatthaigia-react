@@ -10,10 +10,9 @@ import Form from './components/Form';
 import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Header/>
       <Slide/>
-      <Banner/>
       <Advert/>
       <Service/>
       <WorkingProcess/>

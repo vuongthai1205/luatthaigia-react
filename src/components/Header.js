@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom"
 function Header(){
     return (
         <div className="grid wide">
             <header className="header">
-                <a className="logo" href="index.html">Luật THÁI GIA</a>
+                <Link className="logo" to="/">Luật THÁI GIA</Link>
                 <nav className="navbar hide-on-tablet hide-on-mobile">
                     <ul className="navbar__list">
                         <li className="navbar__item">
-                            <a href="./index.html">
+                            <Link to="/sohuutritue">
                                 Sở hữu trí tuệ
-                            </a>
+                            </Link>
                             <i className="fa-solid fa-angle-down"></i>
                             <div className="navbar-menu">
                                 <ul className="navbar-menu__list">
@@ -48,7 +49,7 @@ function Header(){
                     </span>
                     <span className="contact__tel hide-on-mobile">
                         <i className="fa-solid fa-phone"></i>
-                        0933 943 686
+                        0933.943.686
                     </span>
                     <span className="contact__more"><i className="fa-solid fa-bars"></i></span>
                 </div>

@@ -2,6 +2,9 @@
   cursor: default;
   display: none;
 }
+i{
+  padding: 4px;
+}
 /* header */
 .header {
   height: 100px;
@@ -131,7 +134,7 @@
 }
 
 .contact__time {
-  margin-right: 30px;
+  margin-right: 25px;
   position: relative;
 }
 
@@ -145,6 +148,7 @@
   background-color: var(--text-color);
   opacity: 0.3;
 }
+
 
 .contact__more {
   display: none;
@@ -497,7 +501,6 @@
 
 .info-form span i {
   margin-right: 12px;
-  width: 8px;
 }
 
 .form__required {

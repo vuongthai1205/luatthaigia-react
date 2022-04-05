@@ -36,7 +36,7 @@ function Form(){
                             <h2>Thông tin liên hệ</h2>
                             <span><i className="fa-solid fa-location-crosshairs"></i>602/51e Điện Biên Phủ, P.22, Q.Bình Thạnh</span>
                             <span><i className="fa-solid fa-mobile-screen-button"></i>0933 943 686</span>
-                            <span><i className="fa-solid fa-envelope"></i>contact@luatthaigia.com</span>
+                            <span><i className="fa-solid fa-envelope"></i>xuansuonglawyer@gmail.com</span>
                             <span><i className="fa-brands fa-facebook"></i>fb.com/luatthaigia</span>
                         </div>
                     </div>

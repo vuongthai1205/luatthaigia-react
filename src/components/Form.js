@@ -2,65 +2,66 @@ import { useState } from "react";
 
 function Form(){
     const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
-  const [tittle, setTittle] = useState("");
-  const [description, setDescription] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
+    const [tittle, setTittle] = useState("");
+    const [description, setDescription] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let errorForm = {}
-    if(name.trim() === '')
-    {
-        errorForm['name'] = 'Họ và tên không được để trống'
-    }
-    if(email.trim() === '')
-    {
-        errorForm['email'] = 'Email không được để trống'
-    }
-    if(tel.trim() === '')
-    {
-        errorForm['tel'] = 'Số điện thoại không được để trống'
-    }
-    if(tittle.trim() === '')
-    {
-        errorForm['tittle'] = 'Tiêu đề không được để trống'
-    }
-    if(description.trim() === '')
-    {
-        errorForm['description'] = 'Mô tả không được để trống'
-    }
-    console.log(errorForm.name)
-    if (Object.keys(errorForm) === 0)
-    {
-        let data = {
-            'entry.341284223': name,
-            'entry.1894415154' : email,
-            'entry.239575575': tel,
-            'entry.1507243237':tittle,
-            'entry.662749957': description
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        let errorForm = {}
+        if(name.trim() === '')
+        {
+            errorForm['name'] = 'Họ và tên không được để trống'
         }
-        let queryString = new URLSearchParams(data);
-        queryString = queryString.toString();
-        
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIAKtt9g0aQVDPkM2k3u4BEUTpF9CVH6xIDUwEnTDRGY-jQg/formResponse', true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send(queryString);
-        setName('')
-        setEmail('')
-        setTel('')
-        setTittle('')
-        setDescription('')
+        if(email.trim() === '')
+        {
+            errorForm['email'] = 'Email không được để trống'
+        }
+        if(tel.trim() === '')
+        {
+            errorForm['tel'] = 'Số điện thoại không được để trống'
+        }
+        if(tittle.trim() === '')
+        {
+            errorForm['tittle'] = 'Tiêu đề không được để trống'
+        }
+        if(description.trim() === '')
+        {
+            errorForm['description'] = 'Mô tả không được để trống'
+        }
+        console.log(errorForm.name)
+        if (Object.keys(errorForm) == 0)
+        {
+            let data = {
+                'entry.341284223': name,
+                'entry.1894415154' : email,
+                'entry.239575575': tel,
+                'entry.1507243237':tittle,
+                'entry.662749957': description
+            }
+            let queryString = new URLSearchParams(data);
+            queryString = queryString.toString();
+            
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfIAKtt9g0aQVDPkM2k3u4BEUTpF9CVH6xIDUwEnTDRGY-jQg/formResponse', true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.send(queryString);
+            setName('')
+            setEmail('')
+            setTel('')
+            setTittle('')
+            setDescription('')
+        }
+        else{
+            console.log('nhập đầy đủ');
+            setName('')
+            setEmail('')
+            setTel('')
+            setTittle('')
+            setDescription('')
+        }
     }
-    else{
-        console.log('nhập đầy đủ');
-        setName('')
-        setEmail('')
-        setTel('')
-        setTittle('')
-        setDescription('')
-    }}
     
     return (
         <section className="form-container" id="form1">

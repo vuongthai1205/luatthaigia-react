@@ -8,7 +8,7 @@ i{
 /* header */
 .header {
   height: 100px;
-  background-color: #fff;
+  background-color: #ccc;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ i{
 .logo {
   height: 76px;
   width: 200px;
-  color: var(--logo-color);
+  color: var(--main-color);
   /* background-color: var(--background-logo-color); */
   line-height: 76px;
   text-align: center;

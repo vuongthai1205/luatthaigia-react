@@ -1,6 +1,6 @@
 import './assets/css';
 import Header from './components/Header';
-import Slide from './components/Slide';
+import Slider from './components/Slider';
 import Advert from './components/Advert';
 import Service from './components/Service';
 import WorkingProcess from './components/WorkingProcess';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <Header/>
-      <Slide/>
+      <Slider/>
       <Advert/>
       <Service/>
       <WorkingProcess/>
